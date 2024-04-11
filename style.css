@@ -1,0 +1,99 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: white;
+    height: 100%;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    height: 60px;
+}
+
+#site-name {
+    margin-left: 20px;
+}
+
+#social-tabs {
+    margin-right: 20px;
+}
+
+#social-tabs a {
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    margin-top: 60px; /* Adjust this value based on the height of your header */
+}
+
+main {
+    .banner {
+        background-image: url('https://i.ibb.co/QPk55J2/succ.png');
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        .banner-text-box {
+            position: absolute;
+            bottom: 0;
+            left: 25vw;
+            height: 25vh;
+            background-color: black;
+            width: 50vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            .banner-text {
+                color: #33FF33;
+                text-align: center;
+                
+                p {
+                    font-size: 1.5em;
+                }
+
+                h1 {
+                    font-size: 3em;
+                }
+            }
+        }
+    }
+
+    .about {
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 20px;
+        width: 60vw;
+        padding: 0 20vw;
+    }
+
+    .gallery {
+        height: 100vh;
+        background-color: #333;
+        h1 {
+            color: #33FF33;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
