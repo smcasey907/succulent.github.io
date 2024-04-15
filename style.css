@@ -16,6 +16,8 @@ header {
     background-color: #333;
     color: white;
     height: 60px;
+    z-index: 9999;
+    box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.2); /* Add this line */
 }
 
 #site-name {
@@ -94,6 +96,32 @@ main {
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+    }
+
+    /* Mobile styles */
+    @media (max-width: 768px) {
+        header {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        #site-name, #social-tabs {
+            margin: 10px 0;
+        }
+    
+        .banner-text-box {
+            width: 100%;
+            left: 0;
+        }
+    
+        .about, .gallery {
+            padding: 0 20px;
+        }
+
+        .gallery {
+            height: fit-content!important;
+            padding-bottom: 2vh!important;
         }
     }
 }
